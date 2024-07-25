@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="linear-gradient(90deg, rgb(184 93 245) 0%, rgb(245, 45, 58) 100%)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Zuppeegame" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title data-react-helmet="true">Joy Toy Train | Zuppeegame</title>
+    <meta data-react-helmet="true" name="description"
+        content=" The kid must put three items from the smallest to the biggest. If the items are to the correct position a picture displayed as present for the kid." />
+    <meta data-react-helmet="true" property="og:title" content="Joy Toy Train | Zuppeegame" />
+    <meta data-react-helmet="true" property="og:image"
+        content="https://www.zuppeegame.com/assets/game/banners/banner_joytoytrain.png" />
+    <meta data-react-helmet="true" property="og:url" content="/games/joytoytrain/index.html" />
+    <meta data-react-helmet="true" property="og:description"
+        content=" The kid must put three items from the smallest to the biggest. If the items are to the correct position a picture displayed as present for the kid." />
+    <meta data-react-helmet="true" property="og:locale" content="en" />
+    <meta data-react-helmet="true" property="twitter:card" content="summary_large_image" />
+    <meta data-react-helmet="true" property="twitter:domain" content="zuppeegame.com" />
+    <meta data-react-helmet="true" property="twitter:url" content="https://zuppeegame.com/" />
+    <meta data-react-helmet="true" property="twitter:title" content="Online Games on Zuppee game — Let's play" />
+    <meta data-react-helmet="true" property="twitter:description"
+        content="On Zuppee game you can play free online games at school or at home. Zuppee game has the best online game selection and offers the most fun experience to play alone or with friends. We support mobile and desktop games." />
+
+    <meta name="next-head-count" content="26" />
+
+    <link rel="shortcut icon" href="../../assets/game/Zuppee64.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../assets/game/Zuppee64.png" />
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '834875755403391');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=834875755403391&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <meta name="theme-color" content="#de3f80" />
+
+</head>
+
+<body>
+    <div>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+        <link rel="stylesheet" href="../../assets/css/media.css" />
+        <div>
+            <div>
+                <div class="pb-5">
+                    <header
+                        class="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-center">
+                        <div class="container headerContainer">
+                            <a href="/">
+                                <img src="../../assets/game/logo.png" alt="Zuppeegame Logo" class="img-fluid logo" />
+                            </a>
+                            <nav class="ms-auto">
+                                <input type="checkbox" id="menu-toggle" />
+                                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                                <ul class="menu">
+                                    <div class="container navList">
+                                        <li class="nav">
+                                            <div class="f-18 navItem"><a href="/">HOME</a></div>
+                                        </li>
+
+                                        <li class="nav">
+                                            <div class="f-18 navItem">
+                                                <a href="/terms-condition.html">TERMS & CONDITIONS</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav">
+                                            <div class="f-18 navItem">
+                                                <a href="/contact.html">CONTACT US</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav">
+                                            <div class="f-18 navItem">
+                                                <a href="/about.html">ABOUT US</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav">
+                                            <div class="f-18 navItem">
+                                                <a href="/privacy.html">PRIVACY-POLICY</a>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <section class="my-5">
+                <div class="container">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h4>Play Online - Joy Toy Train</h4>
+                        <br /><br />
+                        <div class="gameArea d-flex justify-content-center align-items-center w-100 position-relative">
+                            <a href="/play/joytoytrain/index.html">
+                                <div class="PlayBtn" id="playBtn">Play Game</div>
+                            </a>
+                            <div class="blackLayer" id="playBtn"></div>
+                            <img src="../../assets/game/banners/banner_joytoytrain.png" alt="Zuppeegame icon"
+                                draggable="false" class="img-fluid bannerImg" />
+                        </div>
+                        <div
+                            class="w-100 optiomsBar d-flex flex-column flex-lg-row justify-content-start justify-content-lg-between align-items-center p-3 cusOver">
+                            <div
+                                class="d-none d-lg-flex justify-content-start justify-content-lg-end align-items-center mb-4 mb-lg-0">
+                                <img src="../../assets/game/logos/joytoytrain.png" alt="Zuppeegame
+                  icon" draggable="flase" class="rounded-3 barImg" />
+                                <div class="ms-2 d-flex flex-column">
+                                    <span class="cl-b fw-bold f-20">Joy Toy Train</span><span
+                                        class="cl-peta d-flex justify-content-start align-items-center"><img
+                                            src="../../assets/game/watch.png" alt="Zuppeegame icon" draggable="false"
+                                            class="me-1" />50k</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="font_16">
+                                The kid must put three items from the smallest to the biggest.
+                                If the items are to the correct position a picture displayed
+                                as present for the kid. If the items are not to the correct
+                                position the kid must touch them again in order to try one
+                                more time. Also the first line is help if you can not make
+                                it.<br />The game contain things to compare from categories
+                                animals, numbers, clothes, balls, planets, ages, money,
+                                fruits, chairs, boats, cars etc.<br />This game can help the
+                                kids to understand the size of things that maybe don't
+                                know.<br /><br />
+                            </h1>
+
+                            <div class="d-flex flex-wrap">
+                                <div class="cusBadge">
+                                    <h6 class="cusH">Large Small - Zuppee gamesss</h6>
+                                </div>
+                                <div class="cusBadge">
+                                    <h6 class="cusH">Kids Game</h6>
+                                </div>
+                                <div class="cusBadge">
+                                    <h6 class="cusH">Kids 2D Games</h6>
+                                </div>
+                                <div class="cusBadge">
+                                    <h6 class="cusH">Joy Toy Train PC Game</h6>
+                                </div>
+                                <div class="cusBadge">
+                                    <h6 class="cusH">Train Game</h6>
+                                </div>
+                                <div class="cusBadge">
+                                    <h6 class="cusH">Fill Game Html5</h6>
+                                </div>
+                                <div class="cusBadge">
+                                    <h6 class="cusH">Free HTML5 Games</h6>
+                                </div>
+                                <div class="cusBadge">
+                                    <h6 class="cusH">Play Large Medum Small</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div>
+                <section class="my-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/musicianmagic/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Musician Magic</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/musicianmagic.png"
+                                            alt="Play Musician Magic Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/pixelfiller/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Pixel Filler</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/pixelfiller.png"
+                                            alt="Play Pixel Filler Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/zombieattack/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Zombie Attack</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/zombieattack.png"
+                                            alt="Play Zombie Attack Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/roadrace2d/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Road race 2D</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/roadrace2d.png"
+                                            alt="Play Road race 2D Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/bemillionaire/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Be Millionaire</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/bemillionaire.png"
+                                            alt="Play Be Millionaire Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/burningballs/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Burning Ball</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/burningball.png"
+                                            alt="Play Burning Ball Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/dashingdonut/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Dashing Donuts</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/dashingdonut.png"
+                                            alt="Play Dashing Donuts Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/harvestveggie/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Harvest Veggie</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/harvestveggie.png"
+                                            alt="Play Harvest Veggie Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/icymatch/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Icy Match</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/icymatch.png"
+                                            alt="Play Icy Match Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/halloweenhooks/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Halloween Hooks</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/halloweenhooks.png"
+                                            alt="Play Halloween Hooks Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/icecandy/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Ice Candy</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/icecandy.png"
+                                            alt="Play Ice Candy Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/christmasgift/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Christmas Gift</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/christmasgift.png"
+                                            alt="Play Christmas Gift Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/alienonearth/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Alien On Earth</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/alienonearth.png"
+                                            alt="Play Alien On Earth Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/angrybubble/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Angry Bubbles</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/angrybubble.png"
+                                            alt="Play Angry Bubbles Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/perfectpoolshot/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Perfect Pool Shot</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/perfectpoolshot.png"
+                                            alt="Play Perfect Pool Shot Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/diamondrobber/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Diamond Robber</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/diamondrobber.png"
+                                            alt="Play Diamond Robber Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/dragonfish/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Dragon Fish</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/dragonfish.png"
+                                            alt="Play Dragon Fish Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/fishcatcher/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Fish Catcher</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/fishcatcher.png"
+                                            alt="Play Fish Catcher Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/golfpost/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Golf Post</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/golfpost.png"
+                                            alt="Play Golf Post Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/highwayhero/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Highway Hero</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/highwayhero.png"
+                                            alt="Play Highway Hero Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/joytoytrain/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Joy Toy Train</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/joytoytrain.png"
+                                            alt="Play Joy Toy Train Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/movingsparrow/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Moving Sparrow</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/movingsparrow.png"
+                                            alt="Play Moving Sparrow Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/universaladvanture/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Universal Advanture</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/universaladvanture.png"
+                                            alt="Play Universal Advanture Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/jellybellyjam/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Jelly Belly Jam</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/jallybellyjam.png"
+                                            alt="Play Jelly Belly Jam Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/darkforest/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Dark Forest</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/darkforest.png"
+                                            alt="Play Dark Forest Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/cookiesboockies/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Cookies Boockies</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/cookiesboockies.png"
+                                            alt="Play Cookies Boockies Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/ludomultiplayer/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Ludo Multiplayer</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/ludo.png"
+                                            alt="Play Ludo Multiplayer Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/cricketbatter/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Cricket Worldcup</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/cricketworldcup.png"
+                                            alt="Play Cricket Worldcup Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/2048/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">2048</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/2048game.png"
+                                            alt="Play 2048 Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/shoottogiantbats/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Shoot To Giant Bats</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/shoottogiantbats.png"
+                                            alt="Play Shoot To Giant Bats Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/makeabridgeandgogetdiamond/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Make Bridge and Go get Diamond</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/makeabridgeandgogetdiamond.png"
+                                            alt="Play Make Bridge and Go get Diamond Game on Zuppeegame"
+                                            draggable="false" class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/fighterjet/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Fighter Jet</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/fighterjet.png"
+                                            alt="Play Fighter Jet Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/protectredindianman/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Protect Red Indian Man</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/protectredindianman.png"
+                                            alt="Play Protect Red Indian Man Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/droptheappleintomouth/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Drop The Apple Into Mouth</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/droptheappleintomouth.png"
+                                            alt="Play Drop The Apple Into Mouth Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/touchthealphabetintheorder/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">
+                                                Touch The Alphabets In The Order
+                                            </h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/touchthealphabetintheorder.png"
+                                            alt="Play Touch The Alphabets In The Order Game on Zuppeegame"
+                                            draggable="false" class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/drivesafe/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Drive Safe</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/drivesafe.png"
+                                            alt="Play Drive Safe Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/collectthesameballs/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Collect The Same Balls</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/collectthesameballs.png"
+                                            alt="Play Collect The Same Balls Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/coinsnake/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Coin Snake</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/coinsnake.png"
+                                            alt="Play Coin Snake Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/spacebattle/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Space Battle</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/spacebattle.png"
+                                            alt="Play Space Battle Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/advantureousboyrun/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Advantureous Boy Run</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/advantureousboyrun.png"
+                                            alt="Play Advantureous Boy Run Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/chickenshooter/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Chicken Shooter</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/chickenshooter.png"
+                                            alt="Play Chicken Shooter Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/crossyroad/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Crossy Road</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/crossyroad.png"
+                                            alt="Play Crossy Road Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/cutedressup/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Cute Dress Up</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/cutedressup.png"
+                                            alt="Play Cute Dress Up Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/yummycandies/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Yummy Candies</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/yummycandies.png"
+                                            alt="Play Yummy Candies Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/jellyworld/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Jelly World</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/jellyworld.png"
+                                            alt="Play Jelly World Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/zombiehunter/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Zombie Hunter</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/zombiehunter.png"
+                                            alt="Play Zombie Hunter Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/gopanda/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Go Panda</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/gopanda.png"
+                                            alt="Play Go Panda Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/motoracer/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Moto Racer</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/motoracer.png"
+                                            alt="Play Moto Racer Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/christmasholiday/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Christmas holiday</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/christmasholiday.png"
+                                            alt="Play Christmas holiday Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/balloonpop/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Balloon Pop</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/balloonpop.png"
+                                            alt="Play Balloon Pop Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/choosetruecolors/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Choose True Colors</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/choosetruecolors.png"
+                                            alt="Play Choose True Colors Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/airbattlemission/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Air Battle mission</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/airbattlemission.png"
+                                            alt="Play Air Battle mission Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/stickman/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Stickman</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/stickman.png"
+                                            alt="Play Stickman Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/flowershooter/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Flower Shooter</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/flowershooter.png"
+                                            alt="Play Flower Shooter Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/runningninja/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Running Ninja</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/runningninja.png"
+                                            alt="Play Running Ninja Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/supercandy/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Super Candy</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/supercandy.png"
+                                            alt="Play Super Candy Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/colormatch/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Color Match</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/colormatch.png"
+                                            alt="Play Color Match Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/ballout/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Ball Out</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/ballout.png"
+                                            alt="Play Ball Out Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/arrowpatching/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Arrow Patching</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/arrowpatching.png"
+                                            alt="Play Arrow Patching Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                        <a href="/games/ballbounceescape/index.html">
+                                            <div class="d-flex justfy-content-center align-items-center mainBox">
+                                                <div class="DataName">
+                                                    <h2 class="game-title">Ball Bounce Escape</h2>
+                                                </div>
+                                                <div class="databg"></div>
+                                                <img src="../../assets/game/logos/ballbounceescape.png"
+                                                    alt="Play Ball Bounce Escape Game on Zuppeegame" draggable="false"
+                                                    class="img-fluid HvrIMG mx-auto" />
+                                            </div>
+                                        </a>
+                                    </div> -->
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/ballbouncerwall/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Ball Bouncer Wall</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/ballbouncerwall.png"
+                                            alt="Play Ball Bouncer Wall Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/bottleclimbing/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Bottle Climbing</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/bottleclimbing.png"
+                                            alt="Play Bottle Climbing Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/bottlegarbage/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Bottle Garbage</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/bottlegarbage.png"
+                                            alt="Play Bottle Garbage Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/bottlejump/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Bottle Jump</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/bottlejump.png"
+                                            alt="Play Bottle Jump Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/brainexcercisegame/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Brain Excercise Game</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/brainexcercisegame.png"
+                                            alt="Play Brain Excercise Game Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/carbreaker/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Car Breaker</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/carbreaker.png"
+                                            alt="Play Car Breaker Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/christmassantarun/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Christmas Santa Run</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/christmassantarun.png"
+                                            alt="Play Christmas Santa Run Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/colorjumpgame/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Color Jump Game</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/colorjumpgame.png"
+                                            alt="Play Color Jump Game Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/darkknightrider/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Dark Knight Rider</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/darkknightrider.png"
+                                            alt="Play Dark Knight Rider Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/dashcolorswitch/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Dash Color Switch</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/dashcolorswitch.png"
+                                            alt="Play Dash Color Switch Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/eggbucketmaster/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Egg Bucket Master</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/eggbucketmaster.png"
+                                            alt="Play Egg Bucket Master Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/eggcatcher/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Egg Catcher</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/eggcatcher.png"
+                                            alt="Play Egg Catcher Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/endlessninjarun/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Endless Ninja Run</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/endlessninjarun.png"
+                                            alt="Play Endless Ninja Run Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/fillthedot/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Fill The Dot</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/fillthedot.png"
+                                            alt="Play Fill The Dot Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/firealarmresquers/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Fire Alarm Resquers</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/firealarmresquers.png"
+                                            alt="Play Fire Alarm Resquers Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/flyingtriangle/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Flying Triangle</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/flyingtriangle.png"
+                                            alt="Play Flying Triangle Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/golfpost/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Goal Post Challenge</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/goalpostchallenge.png"
+                                            alt="Play Goal Post Challenge Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/halloweenhooks/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Halloween Run</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/halloweenrun.png"
+                                            alt="Play Halloween Run Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/happymood/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Happy Mood</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/happymood.png"
+                                            alt="Play Happy Mood Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/heroboxjumping/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Hero Box Jumping</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/heroboxjumping.png"
+                                            alt="Play Hero Box Jumping Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/jewelinthrowchallenge/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Jawel In Throw Challenge</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/jewelinthrowchallenge.png"
+                                            alt="Play Jawel In Throw Challenge Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/lemonjuicer/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Lemon Juicer</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/lemonjuicer.png"
+                                            alt="Play Lemon Juicer Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/mannequinheadjump/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Mannequin Head Jump</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/mannequinheadjump.png"
+                                            alt="Play Mannequin Head Jump Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/mrpingjumpingjoy/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Mr Ping Jumping Joy</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/mrpingjumpingjoy.png"
+                                            alt="Play Mr Ping Jumping Joy Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/nanoraceescape/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Nano Race Escape</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/nanoraceescape.png"
+                                            alt="Play Nano Race Escape Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/noobvspro/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Noob VS Pro</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/noobvspro.png"
+                                            alt="Play Noob VS Pro Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/perfectpoolshot/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Perfect Rotare</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/perfectrotare.png"
+                                            alt="Play Perfect Rotare Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/pixelninza/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Pixel Ninja</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/pixelninza.png"
+                                            alt="Play Pixel Ninja Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/pocketjumparcade/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Pocket Jump Arcade</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/pocketjumparcade.png"
+                                            alt="Play Pocket Jump Arcade Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/pongsdot/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Pongs Dot</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/pongsdot.png"
+                                            alt="Play Pongs Dot Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/potfiller/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Pot Filler</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/potfiller.png"
+                                            alt="Play Pot Filler Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/rocketpilot/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Rocket Pilot</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/rocketpilot.png"
+                                            alt="Play Rocket Pilot Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/rollingcubeadvantures/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Rolling Cube Advantures</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/rollingcubeadvantures.png"
+                                            alt="Play Rolling Cube Advantures Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/romeoswiftracer/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Romeo Swift Racer</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/romeoswiftracer.png"
+                                            alt="Play Romeo Swift Racer Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/saveyourpuppies/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Save Your Puppies</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/saveyourpuppies.png"
+                                            alt="Play Save Your Puppies Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/sawsescapes/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Saws Escape</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/sawsescapes.png"
+                                            alt="Play Saws Escape Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/shootzombie/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Shoot Zombie</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/shootzombie.png"
+                                            alt="Play Shoot Zombie Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/speedsquarerunner/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Speeds Square Runner</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/speedsquarerunner.png"
+                                            alt="Play Speeds Square Runner Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/squareescape/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Square Escape</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/squareescape.png"
+                                            alt="Play Square Escape Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/starfallescape/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Star Falls Escape</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/starfallescape.png"
+                                            alt="Play Star Falls Escape Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/stressreleasingdots/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Stress Releasing Dots</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/stressreleasingdots.png"
+                                            alt="Play Stress Releasing Dots Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/tapcounterchallenge/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Tap Counter Challenge</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/tapcounterchallenge.png"
+                                            alt="Play Tap Counter Challenge Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/tennisballarcade/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Tennis Ball Arcade</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/tennisballarcade.png"
+                                            alt="Play Tennis Ball Arcade Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/towerbalancer/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">Tower Balancer</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/towerbalancer.png"
+                                            alt="Play Tower Balancer Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2 m-0 p-0 p-2">
+                                <a href="/games/waroftank/index.html">
+                                    <div class="d-flex justfy-content-center align-items-center mainBox">
+                                        <div class="DataName">
+                                            <h2 class="game-title">War Of Tank</h2>
+                                        </div>
+                                        <div class="databg"></div>
+                                        <img src="../../assets/game/logos/waroftank.png"
+                                            alt="Play War Of Tank Game on Zuppeegame" draggable="false"
+                                            class="img-fluid HvrIMG mx-auto" />
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
