@@ -67,9 +67,34 @@
   });
 </script>
 
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || { cmd: [] };
+          let anchorSlot;
+          googletag.cmd.push(() => {
+            anchorSlot = googletag.defineOutOfPageSlot(
+              '/23072023334/fut',
+              document.body.clientWidth <= 500
+                ? googletag.enums.OutOfPageFormat.TOP_ANCHOR
+                : googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR,
+            );
+          if (anchorSlot) {
+              anchorSlot.setTargeting("test", "anchor").addService(googletag.pubads());
+            }
+       
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+          });
+    </script>
 </head>
 
-<body>
+<body> 
+<script>
+        googletag.cmd.push(() => {
+        googletag.display(anchorSlot);
+          });
+    </script>
+
 <div id='div-gpt-ad-1721976560690-0' style='min-width: 320px; min-height: 320px;'>
   <script>
     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1721976560690-0'); });
