@@ -1,1 +1,1 @@
-No Content: https://zuppeegame.com/games/bemillionaire/offlineClient.js
+No Content: https://aapnatimes.in/games/bemillionaire/offlineClient.js

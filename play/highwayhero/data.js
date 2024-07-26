@@ -1814,7 +1814,7 @@
                                     [0, [0, 1]]
                                 ]],
                                 [15, 58, null, 801657306589321, false, [
-                                    [1, [2, "https://zuppeegame.com"]],
+                                    [1, [2, "https://aapnatimes.in"]],
                                     [1, [2, "Envato"]]
                                 ]]
                             ],
@@ -4595,7 +4595,7 @@
                                             [0, [1, 0.2]]
                                         ]],
                                         [15, 58, null, 804306454431903, false, [
-                                            [1, [10, [10, [2, "https://zuppeegame.com"],
+                                            [1, [10, [10, [2, "https://aapnatimes.in"],
                                                 [23, "Score"]
                                             ],
                                                 [2, " points in the game Dangerous Racing. Can you beat my record? Try it!"]

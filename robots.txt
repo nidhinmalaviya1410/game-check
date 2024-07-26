@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /privacy
 Disallow: /cgi-bin/
-Sitemap: https://www.zuppeegame.com/sitemap.xml
+Sitemap: https://www.aapnatimes.in/sitemap.xml

@@ -1,1 +1,1 @@
-No Content: https://zuppeegame.com/games/lemonjuicer/sw.js
+No Content: https://aapnatimes.in/games/lemonjuicer/sw.js

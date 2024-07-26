@@ -1,1 +1,1 @@
-No Content: https://zuppeegame.com/games/bemillionaire/sw.js
+No Content: https://aapnatimes.in/games/bemillionaire/sw.js
