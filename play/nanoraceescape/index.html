@@ -75,9 +75,60 @@
 
 
 
+</script>
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+        <script>
+            window.googletag = window.googletag || { cmd: [] };
+                let interstitialSlot;
+                googletag.cmd.push(() => {
+                    interstitialSlot = googletag.defineOutOfPageSlot(
+                            '/23072023334/int',
+                            googletag.enums.OutOfPageFormat.INTERSTITIAL,
+                );
+                    if(interstitialSlot) {
+                        interstitialSlot.addService(googletag.pubads()).setConfig({
+                    interstitial: {
+                            triggers: {
+                                navBar: true,
+                                unhideWindow: true,
+                                }, },
+                    });
+                }
+                    googletag.pubads().enableSingleRequest();
+                    googletag.enableServices();
+                });
+        </script>
+        
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+        <script>
+        window.googletag = window.googletag || { cmd: [] };
+            let anchorSlot;
+            googletag.cmd.push(() => {
+                anchorSlot = googletag.defineOutOfPageSlot(
+                '/23072023334/fut',
+                document.body.clientWidth <= 500,googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR,
+                );
+            if (anchorSlot) {
+                anchorSlot.setTargeting("test", "anchor").addService(googletag.pubads());
+                }
+        
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        </script>
 </head>
 
 <body>
+ <script>
+        googletag.cmd.push(() => {
+        googletag.display(anchorSlot);
+          });
+    </script>
+    <script>
+        googletag.cmd.push(() => {
+        googletag.display(interstitialSlot);
+          });
+    </script>
     <div id="fb-root"></div>
 
     <script>
