@@ -409,5 +409,8 @@ pokkt.com, 7606, RESELLER, c45702d9311e25fd
 appads.in, 107606, RESELLER																									
 pubmatic.com, 163560, RESELLER, 5d62403b186f2ace	
 google.com, pub-3182858089993196, RESELLER, f08c47fec0942fa0
-digitalmatter.ai, 273, DIRECT																								
+digitalmatter.ai, 273, DIRECT	
+google.com, pub-8218461161452111, DIRECT, f08c47fec0942fa0
+
+google.com, pub-2081290707882406, DIRECT, f08c47fec0942fa0																							
 																						
