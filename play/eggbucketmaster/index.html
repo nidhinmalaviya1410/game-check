@@ -100,22 +100,25 @@
         </script>
         
         <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-        <script>
-        window.googletag = window.googletag || { cmd: [] };
-            let anchorSlot;
-            googletag.cmd.push(() => {
-                anchorSlot = googletag.defineOutOfPageSlot(
-                '/23072023334/fut',
-                document.body.clientWidth <= 500,googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR,
-                );
-            if (anchorSlot) {
-                anchorSlot.setTargeting("test", "anchor").addService(googletag.pubads());
-                }
-        
-                googletag.pubads().enableSingleRequest();
-                googletag.enableServices();
-            });
-        </script>
+       <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || { cmd: [] };
+          let anchorSlot;
+          googletag.cmd.push(() => {
+            anchorSlot = googletag.defineOutOfPageSlot(
+              '/23072023334/fut',
+              document.body.clientWidth <= 500
+                ? googletag.enums.OutOfPageFormat.TOP_ANCHOR
+                : googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR,
+            );
+          if (anchorSlot) {
+              anchorSlot.setTargeting("test", "anchor").addService(googletag.pubads());
+            }
+       
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+          });
+    </script>
 </head>
 
 <body>
